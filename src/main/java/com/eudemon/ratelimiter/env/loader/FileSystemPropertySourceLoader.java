@@ -4,7 +4,7 @@ import com.eudemon.ratelimiter.env.io.ResourceLoader;
 import com.eudemon.ratelimiter.extension.Order;
 
 /**
- * This class loads environment configuration from the specified file in file system. 
+ * 从文件系统加载配置文件
  * TODO(zheng): support user specified file path.
  */
 @Order(Order.HIGHEST_PRECEDENCE + 30)

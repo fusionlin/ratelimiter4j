@@ -1,11 +1,5 @@
 package com.eudemon.ratelimiter.env.loader;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-
 import com.eudemon.ratelimiter.env.PropertySource;
 import com.eudemon.ratelimiter.env.io.DefaultResourceLoader;
 import com.eudemon.ratelimiter.env.io.Resource;
@@ -15,8 +9,14 @@ import com.eudemon.ratelimiter.env.resolver.PropertySourceResolver;
 import com.eudemon.ratelimiter.env.resolver.YamlPropertySourceResolver;
 import com.eudemon.ratelimiter.exception.ConfigurationResolveException;
 
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 /**
- * Abstract property loader to load environment configuration from file.
+ * 从文件加载配置抽象类
  */
 public abstract class AbstractFilePropertySourceLoader implements PropertySourceLoader {
 

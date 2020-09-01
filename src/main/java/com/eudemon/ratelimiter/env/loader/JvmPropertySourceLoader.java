@@ -1,16 +1,16 @@
 package com.eudemon.ratelimiter.env.loader;
 
+import com.eudemon.ratelimiter.env.PropertyConstants;
+import com.eudemon.ratelimiter.env.PropertySource;
+import com.eudemon.ratelimiter.extension.Order;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 import java.util.Set;
 
-import com.eudemon.ratelimiter.env.PropertyConstants;
-import com.eudemon.ratelimiter.env.PropertySource;
-import com.eudemon.ratelimiter.extension.Order;
-
 /**
- * This class loads environment configuration from JVM environment variables.
+ * 从JVM环境变量加载配置
  */
 @Order(Order.HIGHEST_PRECEDENCE + 10)
 public class JvmPropertySourceLoader implements PropertySourceLoader {
