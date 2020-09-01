@@ -1,5 +1,11 @@
 package com.eudemon.ratelimiter.env.resolver;
 
+import com.eudemon.ratelimiter.exception.ConfigurationResolveException;
+import org.apache.commons.lang3.StringUtils;
+import org.yaml.snakeyaml.Yaml;
+import org.yaml.snakeyaml.error.YAMLException;
+import org.yaml.snakeyaml.reader.UnicodeReader;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.Reader;
@@ -9,18 +15,10 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-import org.apache.commons.lang3.StringUtils;
-import org.yaml.snakeyaml.Yaml;
-import org.yaml.snakeyaml.error.YAMLException;
-import org.yaml.snakeyaml.reader.UnicodeReader;
-
-import com.eudemon.ratelimiter.exception.ConfigurationResolveException;
-
 /**
- * The yaml property source resolver to resolve the environment configuration in yaml format.
+ * yaml文件解析类（使用snakeyaml实现）
  */
-public class YamlPropertySourceResolver extends AbstractPropertySourceResolver
-    implements PropertySourceResolver {
+public class YamlPropertySourceResolver extends AbstractPropertySourceResolver{
 
   public YamlPropertySourceResolver() {
     super();

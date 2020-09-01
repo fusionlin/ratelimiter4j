@@ -1,12 +1,12 @@
 package com.eudemon.ratelimiter.env.resolver;
 
+import com.eudemon.ratelimiter.exception.ConfigurationResolveException;
+
 import java.io.InputStream;
 import java.util.Map;
 
-import com.eudemon.ratelimiter.exception.ConfigurationResolveException;
-
 /**
- * The resolver is used to parse the configurations of different formats, such as yaml, properties.
+ * 配置文件解析接口
  */
 public interface PropertySourceResolver {
 

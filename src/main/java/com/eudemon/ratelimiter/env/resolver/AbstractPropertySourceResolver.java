@@ -2,6 +2,9 @@ package com.eudemon.ratelimiter.env.resolver;
 
 import org.apache.commons.lang3.StringUtils;
 
+/**
+ * 配置文件解析抽象类
+ */
 public abstract class AbstractPropertySourceResolver implements PropertySourceResolver {
 
   @Override

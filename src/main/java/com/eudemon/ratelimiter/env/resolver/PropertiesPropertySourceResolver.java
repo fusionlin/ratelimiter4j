@@ -1,5 +1,8 @@
 package com.eudemon.ratelimiter.env.resolver;
 
+import com.eudemon.ratelimiter.env.PropertyConstants;
+import com.eudemon.ratelimiter.exception.ConfigurationResolveException;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.HashMap;
@@ -7,14 +10,10 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.Set;
 
-import com.eudemon.ratelimiter.env.PropertyConstants;
-import com.eudemon.ratelimiter.exception.ConfigurationResolveException;
-
 /**
- * The resolver is used to resolve the environment configuration in properties format.
+ * properties文件解析类
  */
-public class PropertiesPropertySourceResolver extends AbstractPropertySourceResolver implements
-    PropertySourceResolver {
+public class PropertiesPropertySourceResolver extends AbstractPropertySourceResolver{
 
   @Override
   public String[] getSupportedFileExtensions() {
